@@ -45,6 +45,11 @@ while (play == 'y'):
     
         ch= int(input("Play with \n1.computer--press 1\n2.friend--press 2\n\n"))
         os.system('cls' if os.name == 'nt' else 'clear')
+        while(ch!=1 and ch!=2):
+           print("Enter valid choice")
+           ch= int(input("Play with \n1.computer--press 1\n2.friend--press 2\n\n"))
+           os.system('cls' if os.name == 'nt' else 'clear')
+
         if(ch==1 ):
          
          print("Computer's turn:\n  Stone(st) paper(p) scissor(sc) ??")
@@ -114,7 +119,7 @@ while (play == 'y'):
          print("-------------------------------------------------------------------")
          play = input("\nWant to play more??\nYes-- y\nNo-- n \n")
          if(play=='n'):
-             print("Good bye!")
+             print("\nGood bye!")
 
 
         
