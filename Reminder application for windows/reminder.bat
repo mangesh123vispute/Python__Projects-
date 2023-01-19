@@ -1,1 +1,0 @@
-"C:\Users\laxma\AppData\Local\Programs\Python\Python311\python.exe" "C:\Users\laxma\OneDrive\Desktop\public pro_jects\Python__Projects-\Reminder application for windows\reminder.py"

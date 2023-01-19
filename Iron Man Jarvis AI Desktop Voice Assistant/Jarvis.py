@@ -6,12 +6,15 @@ import wikipedia
 import os
 import time
 import sys
+from AppOpener import open,close
+
+
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 
 engine.setProperty('voice', voices[0].id)
 rate = engine.getProperty('rate')
-engine.setProperty('rate', 160)
+engine.setProperty('rate', 200)
 
 
 def speak(audio):
@@ -53,10 +56,13 @@ def takeCommands():
 
 
 if __name__ == "__main__":
+    
     wishme()
+    engine.setProperty('rate', 160)
     i = 0
     condition = True
     while (condition):
+        os.system('cls' if os.name == 'nt' else 'clear')
         if (i != 0 and i != 3):
             speak('How can i help you sir')
 
@@ -74,15 +80,15 @@ if __name__ == "__main__":
                 speak("sir, what is my next command")
                 i=0
 
-            elif ("open youtube" in query):
+            elif ("youtube" in query):
                 webbrowser.open("youtube.com")
                 speak("sir, what is my next command")
                 i=0
-            elif ("open google" in query):
+            elif ("google" in query):
                 webbrowser.open("google.com")
                 speak("sir, what is my next command")
                 i=0
-            elif ("open stack overflow" in query):
+            elif (" stack overflow" in query):
                 webbrowser.open("stackoverflow.com")
                 speak("sir, what is my next command")
                 i=0
@@ -101,22 +107,56 @@ if __name__ == "__main__":
                     "C:\\Users\\laxma\\OneDrive\\Desktop\\public pro_jects\\project.cpp")
                 speak("sir, what is my next command")
                 i=0
-            elif (('hold' in query) or ("wait") in query):
-                speak("call my name if you what my assistance")
-                condition = False
-                while (condition == False):
-                    newcommand = takeCommands().lower()
-                    if ('exit' in newcommand):
-                         speak("good bye sir")
-                         sys.exit()
-                         
+            
+            elif (('microsoft' in query) and ('open' in query)):
+                    open("Microsoft Edge")
+                    speak("sir, what is my next command")
+                    i=0
+            elif (('microsoft' in query) and ('close' in query) ):
+                    close("Microsoft Edge")
+                    speak("sir, what is my next command")
+                    i=0
+            elif (('whatsapp' in query) and ('open' in query)):
+                    open("whatsapp")
+                    speak("sir, what is my next command")
+                    i=0
+            elif (('close' in query) and ('whatsapp' in query)):
+                close("whatsapp")
+                speak("sir, what is my next command")
+                i = 0
+            elif (('python' in query) and ('open' in query)):
+                    open("PyCharm")
+                    speak("sir, what is my next command")
+                    i=0
 
-                    if ('jarvis' in newcommand):
+            elif (('store' in query) and ('open' in query)):
+                    open("GitHub Desktop")
+                    speak("sir, what is my next command")
+                    i=0
+            
+            
+            elif (('hold' in query) or ("wait" in query)):
+                speak("Enter jarvis if you want my assistance ")
+                condition=False
+                while(condition==False):
+                    os.system('cls' if os.name == 'nt' else 'clear')
+                    print("jarvis==continue\nexit==close\n")
+        
+                    command=input("Enter your command\n")
+                    if(command=='jarvis'):
                         condition = True
-                        speak("welcome back sir")
-
-                    else:
+                        speak("welcome back sir, ") 
+                    elif(command=='exit'):
                         condition = False
+                        speak("good bye sir")
+                        sys.exit()
+                    else:
+                        print("Enter valid command\n")
+                        condition = False
+                
+                    
+
+                    
             elif ('exit' in query):
                 speak("good bye sir")
                 sys.exit()
