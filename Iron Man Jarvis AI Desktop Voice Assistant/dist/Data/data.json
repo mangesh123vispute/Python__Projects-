@@ -129,6 +129,7 @@
     "user guide": "{6D809377-6AF0-444B-8957-A3773F02200E}\\HP\\HP LaserJet 1020\\manuals\\HP1020UG.chm",
     "install notes": "{6D809377-6AF0-444B-8957-A3773F02200E}\\HP\\HP LaserJet 1020\\manuals\\readme.html",
     "uninstall": "{6D809377-6AF0-444B-8957-A3773F02200E}\\mingw-w64\\x86_64-8.1.0-posix-seh-rt_v6-rev0\\uninstall.exe",
+    "python": "{6D809377-6AF0-444B-8957-A3773F02200E}\\JetBrains\\PyCharm Community Edition 2022.3\\bin\\pycharm64.exe",
     "run terminal": "{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw-w64.bat",
     "open project web-site": "{7C5A40EF-A0FB-4BFC-874A-C0F2E0B9FA8E}\\mingw-w64\\i686-8.1.0-posix-dwarf-rt_v6-rev0\\mingw-w64.url",
     "node js": "{6D809377-6AF0-444B-8957-A3773F02200E}\\nodejs\\node.exe",
@@ -187,7 +188,6 @@
     "simple solitaire": "26720RandomSaladGamesLLC.SimpleSolitaire_kx24dqmazqk8j!App",
     "hp privacy settings": "AD2F1837.HPPrivacySettings_v10z8vjag6ke6!App",
     "snipping tool": "Microsoft.ScreenSketch_8wekyb3d8bbwe!App",
-    "office": "Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub",
     "get help": "Microsoft.GetHelp_8wekyb3d8bbwe!App",
     "films & tv": "Microsoft.ZuneVideo_8wekyb3d8bbwe!Microsoft.ZuneVideo",
     "ganache": "GanacheUI_5dg5pnz03psnj!GanacheUI",
@@ -217,12 +217,13 @@
     "get started": "MicrosoftWindows.Client.CBS_cw5n1h2txyewy!WebExperienceHost",
     "ubuntu": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc!ubuntu",
     "myhp": "AD2F1837.myHP_v10z8vjag6ke6!App",
-    "xbox": "Microsoft.GamingApp_8wekyb3d8bbwe!Microsoft.Xbox.App",
     "microsoft to do": "Microsoft.Todos_8wekyb3d8bbwe!App",
     "media player": "Microsoft.ZuneMusic_8wekyb3d8bbwe!Microsoft.ZuneMusic",
     "hp pc hardware diagnostics windows": "AD2F1837.HPPCHardwareDiagnosticsWindows_v10z8vjag6ke6!HPPCHardwareDiagnosticsWindows",
     "intelr graphics command center": "AppUp.IntelGraphicsExperience_8j3eq9eme6ctt!App",
     "sticky notes": "Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe!App",
     "microsoft store": "Microsoft.WindowsStore_8wekyb3d8bbwe!App",
-    "minecraft education": "Microsoft.MinecraftEducationEdition_8wekyb3d8bbwe!Microsoft.MinecraftEducationEdition"
+    "minecraft education": "Microsoft.MinecraftEducationEdition_8wekyb3d8bbwe!Microsoft.MinecraftEducationEdition",
+    "microsoft office": "Microsoft.MicrosoftOfficeHub_8wekyb3d8bbwe!Microsoft.MicrosoftOfficeHub",
+    "xbox": "Microsoft.GamingApp_8wekyb3d8bbwe!Microsoft.Xbox.App"
 }

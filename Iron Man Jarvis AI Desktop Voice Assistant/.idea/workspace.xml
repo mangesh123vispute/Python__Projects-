@@ -1,42 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ae509f3-66f6-4332-994e-b7b3c3010fea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/flappy.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/audio/die.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/audio/hit.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/audio/point.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/audio/swoosh.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/audio/wing.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/base.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/bird.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/message.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Coding Flappy Bird Game/gallery/sprites/pipe.png" afterDir="false" />
+    <list default="true" id="26fa008d-975e-4462-9e5f-de971a4c0769" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Iron Man Jarvis AI Desktop Voice Assistant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Iron Man Jarvis AI Desktop Voice Assistant.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Jarvis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jarvis/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/Analysis-00.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jarvis/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/EXE-00.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jarvis/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jarvis/PYZ-00.pyz" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/PYZ-00.pyz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jarvis/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/PYZ-00.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/jarvis/jarvis.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/jarvis.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jarvis/warn-jarvis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/warn-jarvis.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jarvis/xref-jarvis.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/xref-jarvis.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/jarvis - Shortcut.lnk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Data/app_names.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Data/app_names.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/Data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Data/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/jarvis.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/jarvis.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Random/doc_string.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Random/try_exception.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reminder application for windows/reminder.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reminder application for windows/reminder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reminder application for windows/reminder.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="2KWjB4istr66pldwTzGBLUFO9zB" />
+  <component name="ProjectId" id="2KfJqRLgyMfsrWPMlK7sBUIGqrP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,17 +31,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/laxma/OneDrive/Desktop/dsa and practice/DSA daily 1 problems/dsa in python"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8ae509f3-66f6-4332-994e-b7b3c3010fea" name="Changes" comment="" />
-      <created>1674097095099</created>
+      <changelist id="26fa008d-975e-4462-9e5f-de971a4c0769" name="Changes" comment="" />
+      <created>1674359894708</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1674097095099</updated>
+      <updated>1674359894708</updated>
     </task>
     <servers />
   </component>
