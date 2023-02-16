@@ -17,6 +17,9 @@ engine.setProperty('voice', voices[0].id)
 rate = engine.getProperty('rate')
 engine.setProperty('rate', 200)
 
+app={}
+web={}
+file={}
 
 def speak(audio):
     engine.say(audio)
@@ -76,11 +79,14 @@ def health():
         print("next one hr timer")
         command='nothing'
         time.sleep(60*60)
+def newcommandforapp(name,commandline):
+
+    
+
 
 
 
 if __name__ == "__main__":
-    # health()
     wishme()
     engine.setProperty('rate', 160)
     query='none'
