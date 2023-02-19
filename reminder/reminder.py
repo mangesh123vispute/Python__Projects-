@@ -1,4 +1,4 @@
-import time
+
 import pyttsx3
 from plyer import notification
 import os
@@ -18,18 +18,29 @@ def check():
         Time = end_time - start_time
         ctypes.windll.user32.LockWorkStation()
 
-        while Time <=60 :
+        while Time <=120 :
                 Time = time.time() - start_time
-                if (Time < 60 ):
+                if (Time < 120 ):
                         ctypes.windll.user32.LockWorkStation()
+
+def countdown():
+        countdown_duration=3600
+
+        for remaining_time in range(countdown_duration,0,-1):
+                os.system('cls' if os.name == 'nt' else 'clear')
+                minutes,seconds=divmod(remaining_time,60)
+                print(f"Countdown: {minutes:02d}:{seconds:02d}\n")
+                countdown_str=f'Get up form the chair after {minutes:02d}:{seconds:02d} and move, exercise ,stretch for one to two minutes.'
+                print(countdown_str,end='\r')
+                time.sleep(1)
 
 def speak(audio):
     engine.say(audio)
     engine.runAndWait()
 
-
 command=True
 count=False
+
 while True:
         if count:
                 notification.notify(
@@ -40,7 +51,7 @@ while True:
                 speak("sir, please take break for 1 min and exercise")
                 check()
         speak("one hour timer is set")
-        time.sleep(60*60)
+        countdown()
         count = True
 
 
