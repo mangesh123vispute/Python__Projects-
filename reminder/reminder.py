@@ -74,34 +74,37 @@ def searchword():
                 f.seek(0)
                 i=int(f.read())
         
-    
-    # Create an instance of Chrome WebDriver
-    driver = webdriver.Chrome()
-    # Navigate to Google website
-    driver.get("https://www.google.com/")
-    # Find the search bar and enter the word
-    search_bar = driver.find_element(by='name', value='q')
-    # suppose if index is grater than words then we reset it to 0th index to repeat same set of words
-    if i>len(content)-1:
-        i=0
-        with open(index_file,'w') as f:
-                f.write('0')
-    # searching word at index i
-    search_bar.send_keys(f"{content[i]}")
-    # incrementing word index by one
-    i += 1
-    # storing it to file
-    with open(index_file,'w') as f:
-        f.write(str(i))
-    search_bar.send_keys(Keys.RETURN)
+    try:
+             # Create an instance of Chrome WebDriver
+                driver = webdriver.Chrome()
+                # Navigate to Google website
+                driver.get("https://www.google.com/")
+                # Find the search bar and enter the word
+                search_bar = driver.find_element(by='name', value='q')
+                # suppose if index is grater than words then we reset it to 0th index to repeat same set of words
+                if i>len(content)-1:
+                    i=0
+                    with open(index_file,'w') as f:
+                            f.write('0')
+                # searching word at index i
+                search_bar.send_keys(f"{content[i]}")
+                # incrementing word index by one
+                i += 1
+                # storing it to file
+                with open(index_file,'w') as f:
+                    f.write(str(i))
+                search_bar.send_keys(Keys.RETURN)
 
-#    below code will test space is pressed or not ,if pressed then it will close microsoft edge
-  
-    while sp==False:
-        space() 
-        
-    sp=False 
-    driver.quit()
+                #    below code will test space is pressed or not ,if pressed then it will close microsoft edge
+                speak("press space to exit browser")
+                while sp==False:
+                    space() 
+
+                sp=False 
+                driver.quit()
+    except Exception as e:
+                print(e)
+                
     
 
 def check2(): 
@@ -192,10 +195,10 @@ def countdown():
                 countdown_str = f'Get up from the chair after {minutes:02d}:{seconds:02d} and move, exercise stretch for one to two minutes.'
                 print(countdown_str, end='\r')  
                 word_time=time.time()-last_word_time
+                time.sleep(1)
                 if word_time>=5:                
                         searchword()
                         last_word_time=time.time()
-                time.sleep(1)
                
 
 def main():
