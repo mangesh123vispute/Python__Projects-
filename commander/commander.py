@@ -12,6 +12,8 @@ from AppOpener import open, close
 import json
 from plyer import notification
 from selenium import webdriver
+import subprocess
+
 query2 = 'none'
 
 engine = pyttsx3.init('sapi5')
@@ -57,32 +59,10 @@ def takeCommands():
         return "None"
     return query
 
-def health():
-    engine.setProperty('rate', 160)
-    command = 'nothing'
-    while True:
-        if __name__ == '__main__':
 
-            notification.notify(
-                title='**Take Break for 2 min**',
-                message='Get up form desk afer each 1 hr ',
-                app_icon=r"C:\Users\laxma\OneDrive\Desktop\public pro_jects\Python__Projects-\Reminder application for windows\exercise_cardio_running_treadmill_fitness_diet_icon_149037.ico",
-                timeout=60)
-
-        while (('done' not in command) and ('okay'not in command)):
-            time.sleep(3)
-            speak('sir, please take break , You must exercise after every 1 hour')
-            command = takeCommands().lower()
-
-        print("next one hr timer")
-        command = 'nothing'
-        time.sleep(60*60)
 
 def NewCommandForApp():
     speak("Enter appname and command to open app and close app")
-    speak("please note it is importent to give respective extention after commands,read below note for extention")
-    print("\n\nExtensions for commands:\n.oa to open app\n.ca to close app\n.ow to open web\n.cw to close web\n.of to open file\n.cf to close file\n.ofd to open folder\n.cfd to close folder\nwrite .of,.cf etc after entering respective commands")
-    print('\neg. whatsapp.oa  - open whatsapp\n whatsapp.ca - close whatsapp\n youtube.ow - open youtube\n youtube.cw - close youtube\n')
     appname = input("Enter appname: ")
     commando = (input("Enter command to open app:\t")).lower()
     commandc = (input("Enter command to close app:\t")).lower()
@@ -90,6 +70,7 @@ def NewCommandForApp():
         c = 1
         d = 1
         e = 1
+
 
         file = __builtins__.open('search.txt', 'a+')
         content = file.read()
@@ -131,16 +112,16 @@ def NewCommandForApp():
     file.write(cod)
     file.close()
 
+
+
 def NewCommandForWeb():
-    speak("please note it is importent to give respective extention after commands,read below note for extention")
-    print("\n\nExtensions for commands:\n.oa to open app\n.ca to close app\n.ow to open web\n.cw to close web\n.of to open file\n.cf to close file\n.ofd to open folder\n.cfd to close folder\nwrite .of,.cf etc after entering respective commands")
-    print(
-        '\neg. whatsapp.oa  - open whatsapp\n whatsapp.ca - close whatsapp\n youtube.ow - open youtube\n youtube.cw - close youtube\n')
 
     speak("Enter web url and command to open web ")
     url = input("Enter web url:\t")
     commando = input("Enter command to open web:\t")
     commandc = input("Enter command to close the web:\t")
+    commando=commando+'.ow'
+    commandc=commandc+'.cw'
     while True:
         c = 1
         d = 1
@@ -313,8 +294,6 @@ def OpenApp():
     if (i == 0):
         speak("No command found, please retry")
 
-
-
 def OpenFolder():
     # program to fetch command form the file  and opening folder
     command = query2
@@ -392,11 +371,12 @@ def ChangeCommand():
 # NewCommandForFolder()
 def deletecommand():
     pass
-    
+
 
 if __name__ == "__main__":
-
+    Input=[]
     # code to wish user
+    startTime=time.time()
     wishme()
     engine.setProperty('rate', 160)
     command = 1
@@ -404,88 +384,66 @@ if __name__ == "__main__":
         query2 = 'none'
         os.system('cls' if os.name == 'nt' else 'clear')
         try:
-            # Code for checking file exist
-            try:
-              
-                
+            speak("How can i help you sir, please tell your commands")
 
-                file = __builtins__.open('cmd.txt', 'r')
-                contain = file.read()
-                length = len(contain)
 
-                # if file dosent exist if folder
-
-                if (length == 0):
-                    choice = 1
-                    while choice:
-                        speak("Enter at list one command before moving forward")
-                        print("1 for app\n2 for web\n3 for file")
-                        choice = int(input())
-                        if (choice == 1):
-                            NewCommandForApp()
-                            break
-                        elif (choice == 2):
-                            NewCommandForWeb()
-                            break
-                        elif (choice == 3):
-                            NewCommandForFile()
-                            break
-                else:
-                    print("Commands:")
-                    print(
-                        '--------------------------------------------------------------------------------------------------------------')
-                    print(contain)
-                    file.close()
-                    print(
-                        "NewAppcmd : to add new app command\nNewWebcmd : to new add web commands\nNewFilecmd: to add new file commands\nChangecmd: to change command\nNewFoldercmd: for new folder command\nexit :Exit the program")
-                    print(
-                        '--------------------------------------------------------------------------------------------------------------')
-                    speak("please enter your command")
-                    query2 = input("\nEnter your command:\n")
-
-            except Exception as e:
-                file = __builtins__.open('cmd.txt', 'a')
-                file.close()
-                print(e)
-
-            # logic for command line
 
             if ('.oa' in query2.lower()):
                 OpenApp()
+                Input.append(1)
             elif ('.of' in query2.lower()):
                 OpenFile()
+                Input.append(1)
             elif ('.ow' in query2.lower()):
                 OpenWeb()
+                Input.append(1)
             elif ('.ca' in query2.lower()):
                 CloseApp()
+                Input.append(1)
             elif ('.cf' in query2.lower()):
                 CloseFile()
+                Input.append(1)
             elif ('.cw' in query2.lower()):
                 CloseWeb()
+                Input.append(1)
             elif('.ofd' in query2.lower()):
                 OpenFolder()
+                Input.append(1)
             elif('.cfd' in query2.lower()):
                 CloseFolder()
+                Input.append(1)
             elif ("NewWebcmd".lower() in query2.lower()):
                 NewCommandForWeb()
+                Input.append(1)
             elif ("NewAppcmd".lower() in query2.lower()):
                 NewCommandForApp()
+                Input.append(1)
             elif ("NewFilecmd".lower() in query2.lower()):
                 NewCommandForFile()
+                Input.append(1)
             elif ("NewWebcmd".lower() in query2.lower()):
                 NewCommandForWeb()
+                Input.append(1)
             elif("NewFoldercmd".lower() in query2.lower()):
                 NewFoldercmd()
-            
-
+                Input.append(1)
             elif ('exit' in query2):
                 speak("good bye sir")
                 sys.exit()
+                Input.append(1)
+            if(time.time()-startTime)>=900:
+                speak("sir do you want to continue the program,speak yes to continue else speak no to exit")
 
             else:
-                speak("Enter correct command, Enter 1 to continue or 0 to discontinue")
-                command = int(input("\n1 : To continue\n0 :To discontinue\n "))
-                if (command == 0):
+                cd='none'
+                speak("call my name if you want my assistance,else speak exit to exit the program")
+                while 'jarvis' not in cd and 'exit' not in cd:
+                    Input.append(1)
+                    os.system('cls' if os.name == 'nt' else 'clear')
+                    cd=''
+                    cd=takeCommands().lower()
+                if ('exit' in cd):
+                    Input.append(1)
                     speak("good bye sir")
                     sys.exit()
 

@@ -1,0 +1,2 @@
+{'whatsapp.oa': 'whatsapp'}
+{'whatsapp.ca': 'whatsapp'}

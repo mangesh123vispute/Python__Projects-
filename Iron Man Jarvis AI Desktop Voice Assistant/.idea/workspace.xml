@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26fa008d-975e-4462-9e5f-de971a4c0769" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Iron Man Jarvis AI Desktop Voice Assistant.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Iron Man Jarvis AI Desktop Voice Assistant.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Jarvis.py" beforeDir="false" afterPath="$PROJECT_DIR$/Jarvis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jarvis/Analysis-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/Analysis-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jarvis/EXE-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/EXE-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jarvis/PKG-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/PKG-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jarvis/PYZ-00.toc" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/PYZ-00.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/jarvis/jarvis.pkg" beforeDir="false" afterPath="$PROJECT_DIR$/build/jarvis/jarvis.pkg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Data/app_names.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Data/app_names.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/Data/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/Data/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/jarvis.exe" beforeDir="false" afterPath="$PROJECT_DIR$/dist/jarvis.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Reminder application for windows/reminder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Reminder application for windows/reminder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../reminder/reminder.py" beforeDir="false" afterPath="$PROJECT_DIR$/../reminder/reminder.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +18,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/laxma/OneDrive/Desktop/dsa and practice/DSA daily 1 problems/dsa in python"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/laxma/OneDrive/Desktop/dsa and practice/DSA daily 1 problems/dsa in python&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
